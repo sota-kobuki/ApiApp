@@ -2,8 +2,6 @@
 //  AppDelegate.swift
 //  ApiApp
 //
-//  Created by 小吹　創大 on 2024/08/27.
-//
 
 import UIKit
 
