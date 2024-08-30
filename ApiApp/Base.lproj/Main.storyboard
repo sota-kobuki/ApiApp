@@ -73,13 +73,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPq-NZ-CZy">
-                                                    <rect key="frame" x="58" y="11" width="37.333333333333343" height="18"/>
+                                                    <rect key="frame" x="58" y="11" width="277" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="by3-2i-lMq">
-                                                    <rect key="frame" x="58.000000000000007" y="68" width="26.333333333333336" height="12"/>
+                                                    <rect key="frame" x="58" y="68" width="277" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -88,10 +88,12 @@
                                             <constraints>
                                                 <constraint firstItem="tPq-NZ-CZy" firstAttribute="top" secondItem="CL7-q8-oKY" secondAttribute="topMargin" id="2ea-3L-R1i"/>
                                                 <constraint firstAttribute="bottom" secondItem="6hJ-il-VWg" secondAttribute="bottom" id="5SQ-66-PbK"/>
+                                                <constraint firstItem="Bu2-FK-7nW" firstAttribute="leading" secondItem="tPq-NZ-CZy" secondAttribute="trailing" constant="8" id="9VI-kd-BE1"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Bu2-FK-7nW" secondAttribute="trailing" id="QA1-2r-Do0"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="by3-2i-lMq" secondAttribute="bottom" id="QL6-v2-V8P"/>
                                                 <constraint firstItem="by3-2i-lMq" firstAttribute="leading" secondItem="6hJ-il-VWg" secondAttribute="trailing" constant="8" id="UsZ-We-jNa"/>
                                                 <constraint firstItem="6hJ-il-VWg" firstAttribute="leading" secondItem="CL7-q8-oKY" secondAttribute="leading" id="W26-LD-qG2"/>
+                                                <constraint firstItem="Bu2-FK-7nW" firstAttribute="leading" secondItem="by3-2i-lMq" secondAttribute="trailing" constant="8" id="YFh-p4-FbT"/>
                                                 <constraint firstItem="Bu2-FK-7nW" firstAttribute="centerY" secondItem="CL7-q8-oKY" secondAttribute="centerY" id="ZV7-Qr-qNp"/>
                                                 <constraint firstItem="tPq-NZ-CZy" firstAttribute="leading" secondItem="6hJ-il-VWg" secondAttribute="trailing" constant="8" id="ank-77-kLm"/>
                                                 <constraint firstItem="6hJ-il-VWg" firstAttribute="top" secondItem="CL7-q8-oKY" secondAttribute="top" id="fIO-eY-bcZ"/>

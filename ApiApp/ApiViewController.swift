@@ -128,7 +128,11 @@ class ApiViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                 print(error)
                 self.shopArray = []
                 self.isLastLoaded = true
-                self.statusLabel.text = "データの取得が失敗しました"
+                if keyword.isEmpty {
+                    self.statusLabel.text = "キーワードを入力してください"
+                } else {
+                    self.statusLabel.text = "データの取得を失敗しました"
+                }
             }
             self.tableView.reloadData()
         }
@@ -149,6 +153,10 @@ class ApiViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         let starImageName = shop.isFavorite ? "star.fill" : "star"
         let starImage = UIImage(systemName: starImageName)?.withRenderingMode(.alwaysOriginal)
         cell.favoriteButton.setImage(starImage, for: .normal)
+        
+        if shopArray.count - indexPath.row < 10 {
+            self.updateShopArray(appendLoad: true)
+        }
 
         return cell
     }

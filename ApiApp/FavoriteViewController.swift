@@ -7,6 +7,8 @@
 import UIKit
 import RealmSwift
 import AlamofireImage
+import SafariServices
+
 
 class FavoriteViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -49,6 +51,16 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
 
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        let favoriteShop = favoriteArray[indexPath.row]
+        let url = URL(string: favoriteShop.couponURL)!
+        let safariViewController = SFSafariViewController(url: url)
+        safariViewController.modalPresentationStyle = .pageSheet
+        present(safariViewController, animated: true)
+    }
+    
     
     @IBAction func tapFavoriteButton(_ sender: UIButton) {
         let point = sender.convert(CGPoint.zero, to: tableView)
