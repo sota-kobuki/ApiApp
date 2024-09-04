@@ -178,13 +178,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyr-DH-DUR">
-                                                    <rect key="frame" x="58" y="11" width="37.333333333333343" height="18"/>
+                                                    <rect key="frame" x="58" y="11" width="277" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngb-a5-2r2">
-                                                    <rect key="frame" x="58.000000000000007" y="68" width="26.333333333333336" height="12"/>
+                                                    <rect key="frame" x="58" y="68" width="277" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -196,10 +196,12 @@
                                                 <constraint firstItem="McY-SD-iMA" firstAttribute="centerY" secondItem="uk4-8Q-2RW" secondAttribute="centerY" id="KPG-cR-SA1"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="ngb-a5-2r2" secondAttribute="bottom" id="OGJ-aW-4pq"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="McY-SD-iMA" secondAttribute="trailing" id="W2Y-9h-JHF"/>
+                                                <constraint firstItem="McY-SD-iMA" firstAttribute="leading" secondItem="Xyr-DH-DUR" secondAttribute="trailing" constant="8" id="YGt-81-LCd"/>
                                                 <constraint firstItem="ngb-a5-2r2" firstAttribute="leading" secondItem="7Zf-N5-Pk6" secondAttribute="trailing" constant="8" id="ZrB-4s-efV"/>
                                                 <constraint firstItem="Xyr-DH-DUR" firstAttribute="top" secondItem="uk4-8Q-2RW" secondAttribute="topMargin" id="azZ-1Y-e7i"/>
                                                 <constraint firstItem="7Zf-N5-Pk6" firstAttribute="top" secondItem="uk4-8Q-2RW" secondAttribute="top" id="fEc-Wa-IMk"/>
                                                 <constraint firstAttribute="bottom" secondItem="7Zf-N5-Pk6" secondAttribute="bottom" id="gWE-T5-Mog"/>
+                                                <constraint firstItem="McY-SD-iMA" firstAttribute="leading" secondItem="ngb-a5-2r2" secondAttribute="trailing" constant="8" id="xEk-dS-eSA"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -236,7 +238,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4um-3X-Bos" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="768"/>
+            <point key="canvasLocation" x="1020.6106870229007" y="767.6056338028169"/>
         </scene>
     </scenes>
     <resources>
